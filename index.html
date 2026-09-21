@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simplify.lt — Data, AI and Marketing Consultancy</title>
+<meta name="description" content="Simplify.lt helps businesses unlock growth through data-driven solutions: analytics, AI, and marketing automation.">
+<style>
+  :root {
+    --bg: #0b1220;
+    --bg-alt: #101a2c;
+    --card: #14213a;
+    --text: #eef2f8;
+    --text-dim: #a8b3c7;
+    --accent: #5b8cff;
+    --accent-soft: rgba(91,140,255,0.12);
+    --border: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0;
+    background: rgba(11,18,32,0.85);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+  }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; }
+  .logo span { color: var(--accent); }
+  nav a { margin-left: 28px; color: var(--text-dim); font-size: 0.95rem; }
+  nav a:hover { color: var(--text); }
+
+  .hero {
+    padding: 96px 0 72px;
+    text-align: center;
+    background: radial-gradient(ellipse at top, var(--bg-alt) 0%, var(--bg) 60%);
+  }
+  .eyebrow {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.15;
+    margin: 0 0 20px;
+    letter-spacing: -0.02em;
+  }
+  .hero p.lead {
+    font-size: 1.15rem;
+    color: var(--text-dim);
+    max-width: 620px;
+    margin: 0 auto 36px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.98rem;
+  }
+  .btn:hover { opacity: 0.9; }
+
+  section { padding: 80px 0; }
+  section.alt { background: var(--bg-alt); }
+  h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+    text-align: center;
+  }
+  .section-lead {
+    text-align: center;
+    color: var(--text-dim);
+    max-width: 560px;
+    margin: 0 auto 48px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 800px) {
+    .grid-3 { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+  }
+  .card h3 { margin: 0 0 10px; font-size: 1.15rem; }
+  .card p { margin: 0; color: var(--text-dim); font-size: 0.96rem; }
+  .card ul { margin: 14px 0 0; padding-left: 18px; color: var(--text-dim); font-size: 0.92rem; }
+  .card li { margin-bottom: 4px; }
+
+  .pillar-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+  }
+
+  blockquote {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text);
+  }
+  .quote-author {
+    margin-top: 16px;
+    font-size: 0.88rem;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+
+  footer {
+    padding: 56px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+  footer .loc { color: var(--text-dim); margin-bottom: 18px; }
+  footer .mail { font-size: 1.05rem; font-weight: 600; }
+  footer .fine { margin-top: 32px; color: var(--text-dim); font-size: 0.82rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Simplify<span>.lt</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Data, AI and Marketing Consultancy</span>
+    <h1>Unlocking Growth Through<br>Data-Driven Solutions</h1>
+    <p class="lead">We help businesses turn data into decisions — combining analytics, AI, and marketing automation to drive measurable results.</p>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About Us</h2>
+    <p class="section-lead">Three principles guide everything we build for our clients.</p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="pillar-icon">◆</div>
+        <h3>Data &amp; AI Expertise</h3>
+        <p>We leverage cutting-edge data technologies and AI to deliver actionable insights.</p>
+      </div>
+      <div class="card">
+        <div class="pillar-icon">▲</div>
+        <h3>Effective Marketing</h3>
+        <p>We craft effective marketing campaigns that drive results and increase brand awareness.</p>
+      </div>
+      <div class="card">
+        <div class="pillar-icon">●</div>
+        <h3>Client-Focused Approach</h3>
+        <p>Understanding your business needs always comes first, in every engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="section-lead">What we do, in practice.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Data Analytics</h3>
+        <p>Data-driven insights to guide your business decisions.</p>
+        <ul>
+          <li>Data insights &amp; analysis</li>
+          <li>Data governance &amp; management</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>AI Solutions</h3>
+        <p>Leveraging AI to automate processes and enhance performance.</p>
+        <ul>
+          <li>Practical application of AI tools</li>
+          <li>Business process simplification</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Marketing Automation</h3>
+        <p>Streamlined marketing efforts for increased efficiency and impact.</p>
+        <ul>
+          <li>Search engine marketing</li>
+          <li>Social media marketing</li>
+          <li>Content marketing &amp; SEO</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clients">
+  <div class="wrap">
+    <h2>Why Clients Work With Us</h2>
+    <p class="section-lead">A track record built on results, not promises.</p>
+    <div class="grid-3">
+      <div class="card">
+        <blockquote>"We've helped a wide range of businesses achieve their goals."</blockquote>
+        <div class="quote-author">Satisfied Clients</div>
+      </div>
+      <div class="card">
+        <blockquote>"Our data-driven approach consistently delivers measurable outcomes."</blockquote>
+        <div class="quote-author">Proven Results</div>
+      </div>
+      <div class="card">
+        <blockquote>"Building relationships for sustainable, long-term success."</blockquote>
+        <div class="quote-author">Long-Term Partnerships</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Get in Touch</h2>
+    <p class="loc">We're based in Vilnius, Lithuania, but we work with clients around the globe.</p>
+    <a class="mail" href="mailto:lukas@simplify.lt">lukas@simplify.lt</a>
+    <p class="fine">© <span id="year"></span> Simplify.lt — Data, AI and Marketing Consultancy</p>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
